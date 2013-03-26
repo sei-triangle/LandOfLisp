@@ -59,5 +59,7 @@
          `(you are now carrying the ,object))
         (t '(you cannot get that.))))
 
+(defun inventory ()
+  (cons 'items- (objects-at 'body *objects* *object-locations*)))
 
 
